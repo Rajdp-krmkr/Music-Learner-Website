@@ -6,6 +6,14 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --orange-500: orange;
+  --yellow-500: yellow;
+  --cyan-500: cyan;
+  --emerald-500: #007a7a;
+  --red-500: red;
+  --blue-500: blue;
+  --pink-500: pink;
+  --indigo-500: indigo;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -74,16 +82,22 @@ body {
 
 
 .card {
-  width: 190px;
-  height: 254px;
+  width: 28vw;
+  
+  min-height: 270px;
+  height: auto;
   background-image: linear-gradient(163deg, rgb(108, 0, 162) 0%, #3700ff 100%);
   border-radius: 20px;
   transition: all .3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
  }
  
  .card2 {
-  width: 190px;
-  height: 254px;
+  width: 100%;
+  height: 100%;
+  min-height: 270px;
   background-color: #090909;
   border-radius: 20px;
   transition: all .2s;
@@ -97,3 +111,13 @@ body {
  .card:hover {
   box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
  }
+
+ .ytochooseUsscroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.ytochooseUsscroll {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}

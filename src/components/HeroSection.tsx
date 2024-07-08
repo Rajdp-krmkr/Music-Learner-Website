@@ -20,7 +20,7 @@ const HeroSection = () => {
           </p>
           <div className="mt-4">
             <Link href={"/courses"}>
-            <button class="boton-elegante">Explore Courses</button>
+            <button className="boton-elegante">Explore Courses</button>
 
             </Link>
           </div>
