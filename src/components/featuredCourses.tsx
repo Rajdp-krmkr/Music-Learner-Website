@@ -24,18 +24,17 @@ const FeaturedCourses = () => {
                     <p className='lg:text-5xl text-4xl lg:font-bold font-extrabold text-transparent bg-clip-text bg-gradient-to-b from-yellow-200 to-yellow-800'>Learn With The Best</p>
                 </div>
                 <div className="cards my-10 p-10 lg:grid lg:grid-cols-3 gap-7 flex flex-col">
-                    {featuredCourses.map((courses:Courses) => {
-                        return (
-                            <div className="card min-w-[350px]">
-                                <div className="card2 p-5 flex flex-col items-center justify-around text-center gap-3 ">
-                                    <div className='flex items-center justify-center '><h1 className='text-3xl lg:text-2xl font-bold text-transparent bg-gradient-to-br bg-clip-text from-red-400 to-blue-400'>{courses.title}</h1></div>
-                                    <div className='flex items-center justify-center '><p className='text-gray-300'>{courses.description}</p></div>
-                                    <div className='flex items-center justify-center '><p></p></div>
-                                    <div className='flex items-center justify-center border-1 bg-gray-300 bg-gradient-to-br text-black font-semibold text-xl rounded-lg p-2'><button>Learn More</button></div>
-                                </div>
+                    {featuredCourses.map((courses: Courses, index) => (
+                        <div key={index} className="card min-w-[350px]">
+                            <div className="card2 p-5 flex flex-col items-center justify-around text-center gap-3 ">
+                                <div className='flex items-center justify-center '><h1 className='text-3xl lg:text-2xl font-bold text-transparent bg-gradient-to-br bg-clip-text from-red-400 to-blue-400'>{courses.title}</h1></div>
+                                <div className='flex items-center justify-center '><p className='text-gray-300'>{courses.description}</p></div>
+                                <div className='flex items-center justify-center '><p></p></div>
+                                <div className='flex items-center justify-center border-1 bg-gray-300 bg-gradient-to-br text-black font-semibold text-xl rounded-lg p-2'><button>Learn More</button></div>
                             </div>
-                        )
-                    })}
+                        </div>
+                    )
+                    )}
                 </div>
                 <div><button className='boton-elegante'>Explore All Courses</button></div>
             </div>

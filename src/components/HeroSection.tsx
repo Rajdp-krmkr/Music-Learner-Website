@@ -15,12 +15,12 @@ const HeroSection = () => {
             Welcome to our Music Academy, where you can learn and master the art
             of music. Our experienced instructors will guide you through various
             courses and help you develop your skills in playing instruments,
-            singing, music theory, and more. Whether you're a beginner or an
+            singing, music theory, and more. Whether you&apos;re a beginner or an
             advanced musician, we have the right courses for you.
           </p>
           <div className="mt-4">
             <Link href={"/courses"}>
-            <button className="boton-elegante">Explore Courses</button>
+              <button className="boton-elegante">Explore Courses</button>
 
             </Link>
           </div>
